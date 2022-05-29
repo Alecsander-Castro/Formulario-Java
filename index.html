@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com JS</title>
+    <script src="cadastro.js"></script>
+    <script src="index.js"></script>
+    <script src="app.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Registro de Bruxos</h1>
+        </div>
+        <div>
+            <form onsubmit="aplicativo.novoCadastro()">
+                <div>
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div>
+                    <label for="sobrenome">Sobrenome: </label>
+                    <input type="text" name="sobrenome" id="sobrenome">
+                </div>
+                <div>
+                    <label for="sobrenome">E-mail: </label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="sobrenome">Casa: </label>
+                    <select name="casa" id="casa">
+                        <option value="empty" selected disabled >Selecione</option>
+                        <option value="Grifinoria">Grifinória</option>
+                        <option value="Sonserina">Sonserina</option>
+                        <option value="Lufa-Lufa">Lufa-Lufa</option>
+                        <option value="Corvinal">Corvinal</option>
+                    </select>
+                    
+                </div>
+                <br>
+                <button type="submit">Cadastrar</button>
+                <button type="button" onclick="aplicativo.limparCampo()">Limpar</button>
+            </form>
+        </div>
+
+        <h3>Bruxos Cadastrados: </h3>
+        <ul id="propiedades"></ul>
+    </div>
+</body>
+</html>

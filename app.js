@@ -1,0 +1,1 @@
+const aplicativo = new App();
