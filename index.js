@@ -13,6 +13,7 @@ class App {
     criarBotaoRemover (){
         let botaoRemover = document.createElement("button")
         botaoRemover.setAttribute("onclick" , "aplicativo.remover()")
+        botaoRemover.setAttribute("class" , "button3")
         botaoRemover.innerText = "Remover"
         return botaoRemover;
     }
@@ -27,12 +28,13 @@ class App {
     listaCadastro (cadastro){
         let novaLista = document.createElement("li")
         let propiedadesCadastro ="Nome: " + cadastro.nome + " |" + " Sobrenome: " + cadastro.sobrenome + " |" + " E-mail: " + cadastro.email + " |" + " Casa: " + cadastro.casa
+        novaLista.setAttribute("class" , "lista")
         novaLista.innerHTML += propiedadesCadastro
         let botaoRemover = this.criarBotaoRemover()
         novaLista.appendChild(botaoRemover)
         document.getElementById("propiedades").appendChild(novaLista)
     }
-
+    
     remover(){
         let liRemover = event.target.parentNode
         document.getElementById("propiedades").removeChild(liRemover)

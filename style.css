@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.titulo{
+    text-align: center;
+}
+.cadastro{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(116,9,121,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.container {
+    width: 100%;
+}
+
+.input-form {
+    max-width: 500px;
+    width: 100%;
+    padding: 4px 20px;
+    height: 35px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    display: block;
+    
+}
+.input-form:focus {
+    background: rgb(212, 225, 248);
+}
+
+body {
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.form-row {
+    flex-direction:column;
+    display: flex;
+}
+.buttons{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.button1,
+.button2{
+    padding: 4px 20px;
+    height: 35px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(116,9,121,1) 0%, rgba(0,212,255,1) 100%);
+}
+.button3 {
+    margin-left: 10px;
+    border: none;
+    border-radius:10px;
+    height: 25px;
+    max-width: 60px;
+    width: 100%;
+    padding: auto;
+    text-align: center;
+    display: block;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(116,9,121,1) 0%, rgba(0,212,255,1) 100%);
+}
+.button1:hover,
+.button2:hover,
+.button3:hover {
+    background: rgb(212, 225, 248);
+    box-shadow: inset 2px 2px 2px rgb(197, 174, 235);
+    text-shadow: none;
+    
+}
+.lista {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

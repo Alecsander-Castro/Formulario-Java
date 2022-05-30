@@ -8,31 +8,29 @@
     <script src="cadastro.js"></script>
     <script src="index.js"></script>
     <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
     <div class="container">
-        <div>
+        <div class="titulo">
             <h1>Registro de Bruxos</h1>
+            <br>
         </div>
         <div>
             <form onsubmit="aplicativo.novoCadastro()">
-                <div>
-                    <label for="nome">Nome: </label>
-                    <input type="text" name="nome" id="nome">
+                <div class="form-row form-nome">
+                    <input class="input-form" type="text" name="nome" id="nome" placeholder="Nome">
                 </div>
-                <div>
-                    <label for="sobrenome">Sobrenome: </label>
-                    <input type="text" name="sobrenome" id="sobrenome">
+                <div class="form-row form-sobrenome">
+                    <input class="input-form" type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
                 </div>
-                <div>
-                    <label for="sobrenome">E-mail: </label>
-                    <input type="email" name="email" id="email">
+                <div class="form-row form-email">
+                    <input class="input-form" type="email" name="email" id="email" placeholder="E-mail">
                 </div>
-                <div>
-                    <label for="sobrenome">Casa: </label>
-                    <select name="casa" id="casa">
-                        <option value="empty" selected disabled >Selecione</option>
+                <div class="form-row form-house">
+                    <select class="input-form" name="casa" id="casa">
+                        <option value="empty" selected disabled >Casa</option>
                         <option value="Grifinoria">Grifinória</option>
                         <option value="Sonserina">Sonserina</option>
                         <option value="Lufa-Lufa">Lufa-Lufa</option>
@@ -41,13 +39,21 @@
                     
                 </div>
                 <br>
-                <button type="submit">Cadastrar</button>
-                <button type="button" onclick="aplicativo.limparCampo()">Limpar</button>
+                <div class="buttons">
+                    <button class="button1" type="submit">Cadastrar</button>
+                    <button class="button2" type="button" onclick="aplicativo.limparCampo()">Limpar</button>
             </form>
         </div>
-
-        <h3>Bruxos Cadastrados: </h3>
-        <ul id="propiedades"></ul>
+        <br>
+        <div class="cadastro">
+            <h3>Bruxos Cadastrados</h3>
+            
+        </div>
+        <br>
+        <div>
+            <ul id="propiedades"></ul>
+        </div>
+        
     </div>
 </body>
 </html>
